@@ -3,6 +3,8 @@ import Index from './sections/atendimento'
 import Header from './sections/header/Index'
 import Servicos from './sections/servicos'
 import Search from './sections/search'
+import First from './sections/first'
+import Contacts from './sections/contacts'
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <Index />
       <Servicos/>
       <Search />
+      <First />
+      <Contacts />
     </>
   )
 }
