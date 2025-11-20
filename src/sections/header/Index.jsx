@@ -37,8 +37,8 @@ const Header = () => {
             </div>
 
             <div>
-              <h1 className="text-xl font-bold text-gray-900">UrgênciaVida</h1>
-              <p className="text-xs text-gray-600">Atendimento 24/7</p>
+              <h1 className="text-xl font-bold text-gray-900">MeuAPH</h1>
+              <p className="text-xs text-gray-600">Projeto Integrador</p>
             </div>
           </div>
 

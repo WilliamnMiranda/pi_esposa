@@ -1,7 +1,7 @@
 import React from 'react'
 const Protocols = () => {
   return (
-    <section id="protocolos" className="py-16 bg-white transition-all duration-1000 animate-fade-in">
+<section id="protocolos" className="py-16 bg-white transition-all duration-1000 animate-fade-in">
   <div className="container mx-auto px-4">
     <div className="max-w-5xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Principais Protocolos</h2>
