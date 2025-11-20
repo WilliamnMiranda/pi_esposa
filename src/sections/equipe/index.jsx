@@ -112,22 +112,22 @@ const Equipe = () => {
           de recuperação completa em emergências cardíacas.
         </p>
 
-        <div class="grid grid-cols-3 gap-4 text-center">
-          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-            <div class="text-3xl font-bold mb-1">10min</div>
-            <div class="text-sm text-red-100">Tempo Ouro</div>
-          </div>
+       <div class="grid grid-cols-3 gap-4 text-center">
+  <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+    <div class="text-xl sm:text-2xl md:text-3xl font-bold mb-1">10min</div>
+    <div class="text-xs sm:text-sm text-red-100">Tempo Ouro</div>
+  </div>
 
-          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-            <div class="text-3xl font-bold mb-1">24/7</div>
-            <div class="text-sm text-red-100">Disponível</div>
-          </div>
+  <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+    <div class="text-xl sm:text-2xl md:text-3xl font-bold mb-1">24/7</div>
+    <div class="text-xs sm:text-sm text-red-100">Disponível</div>
+  </div>
 
-          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-            <div class="text-3xl font-bold mb-1">100%</div>
-            <div class="text-sm text-red-100">Dedicação</div>
-          </div>
-        </div>
+  <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+    <div class="text-xl sm:text-2xl md:text-3xl font-bold mb-1">100%</div>
+    <div class="text-xs sm:text-sm text-red-100">Dedicação</div>
+  </div>
+</div>
 
       </div>
 

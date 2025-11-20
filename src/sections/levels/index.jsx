@@ -1,98 +1,156 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Levels = () => {
-  return (
-    <section id="fases" className="py-16 bg-white transition-all duration-1000 animate-fade-in">
-  <div className="container mx-auto px-4">
-    <div className="max-w-4xl mx-auto">
-      
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
-        Fases do Atendimento
-      </h2>
+  const [openVideo, setOpenVideo] = useState(null);
 
-      <div className="space-y-6">
+  const handleToggle = (id) => {
+    setOpenVideo((prev) => (prev === id ? null : id));
+  };
 
-        <div className="bg-gradient-to-r from-red-500 to-red-600 rounded-xl p-6 text-white shadow-lg hover:scale-105 transition-transform">
-          <div className="flex items-start gap-4">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
-              <span className="text-2xl font-bold">1</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Acionamento</h3>
-              <p className="text-red-50">
-                Chamado através do 192 (SAMU) ou 193 (Bombeiros). Central de regulação avalia a gravidade e despacha a equipe adequada.
-              </p>
-            </div>
-          </div>
-        </div>
-
-  
-        <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl p-6 text-white shadow-lg hover:scale-105 transition-transform">
-          <div className="flex items-start gap-4">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
-              <span className="text-2xl font-bold">2</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Deslocamento</h3>
-              <p className="text-orange-50">
-                Viatura se desloca até o local da ocorrência com rapidez e segurança, utilizando sinais sonoros e luminosos quando necessário.
-              </p>
-            </div>
-          </div>
-        </div>
-
-       
-        <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 text-white shadow-lg hover:scale-105 transition-transform">
-          <div className="flex items-start gap-4">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
-              <span className="text-2xl font-bold">3</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Atendimento no Local</h3>
-              <p className="text-blue-50">
-                Avaliação primária e secundária da vítima. Aplicação de protocolos de suporte básico ou avançado de vida conforme necessário.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      
-        <div className="bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl p-6 text-white shadow-lg hover:scale-105 transition-transform">
-          <div className="flex items-start gap-4">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
-              <span className="text-2xl font-bold">4</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Transporte</h3>
-              <p className="text-teal-50">
-                Remoção segura do paciente para unidade hospitalar de referência, mantendo monitoramento contínuo durante o trajeto.
-              </p>
-            </div>
-          </div>
-        </div>
-
-     
-        <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-xl p-6 text-white shadow-lg hover:scale-105 transition-transform">
-          <div className="flex items-start gap-4">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
-              <span className="text-2xl font-bold">5</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Transferência</h3>
-              <p className="text-green-50">
-                Passagem das informações e do paciente para a equipe hospitalar, garantindo continuidade do cuidado.
-              </p>
-            </div>
-          </div>
-        </div>
-
+  const video = (
+    <div className="w-full mt-4">
+      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+        <iframe
+          className="absolute inset-0 w-full h-full rounded-xl"
+          src="https://www.youtube.com/embed/8xBV2mxEUvg"
+          title="Video"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
       </div>
-
     </div>
-  </div>
-</section>
+  );
 
-  )
-}
+  return (
+    <section
+      id="fases"
+      className="py-16 bg-white transition-all duration-1000 animate-fade-in"
+    >
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
+            Fases do Atendimento
+          </h2>
 
-export default Levels
+          <div className="space-y-6">
+
+            {/* ITEM 1 */}
+            <div>
+              <div
+                onClick={() => handleToggle(1)}
+                className="cursor-pointer bg-gradient-to-r from-red-500 to-red-600 rounded-xl p-6 text-white shadow-lg hover:scale-105 transition-transform"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold">1</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">Acionamento</h3>
+                    <p className="text-red-50">
+                      Chamado através do 192 (SAMU) ou 193 (Bombeiros). Central
+                      de regulação avalia a gravidade e despacha a equipe
+                      adequada.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {openVideo === 1 && video}
+            </div>
+
+            {/* ITEM 2 */}
+            <div>
+              <div
+                onClick={() => handleToggle(2)}
+                className="cursor-pointer bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl p-6 text-white shadow-lg hover:scale-105 transition-transform"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold">2</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">Deslocamento</h3>
+                    <p className="text-orange-50">
+                      Viatura se desloca até o local com rapidez e segurança.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {openVideo === 2 && video}
+            </div>
+
+            {/* ITEM 3 */}
+            <div>
+              <div
+                onClick={() => handleToggle(3)}
+                className="cursor-pointer bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 text-white shadow-lg hover:scale-105 transition-transform"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold">3</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">Atendimento no Local</h3>
+                    <p className="text-blue-50">
+                      Avaliação primária e secundária da vítima.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {openVideo === 3 && video}
+            </div>
+
+            {/* ITEM 4 */}
+            <div>
+              <div
+                onClick={() => handleToggle(4)}
+                className="cursor-pointer bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl p-6 text-white shadow-lg hover:scale-105 transition-transform"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold">4</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">Transporte</h3>
+                    <p className="text-teal-50">
+                      Remoção segura do paciente com monitoramento.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {openVideo === 4 && video}
+            </div>
+
+            {/* ITEM 5 */}
+            <div>
+              <div
+                onClick={() => handleToggle(5)}
+                className="cursor-pointer bg-gradient-to-r from-green-500 to-green-600 rounded-xl p-6 text-white shadow-lg hover:scale-105 transition-transform"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold">5</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">Transferência</h3>
+                    <p className="text-green-50">
+                      Passagem do paciente e informações para o hospital.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {openVideo === 5 && video}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Levels;
