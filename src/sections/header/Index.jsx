@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from 'react-router';
 const Header = () => {
   const [open, setOpen] = useState(false);
 
@@ -38,7 +38,7 @@ const Header = () => {
 
             <div>
               <h1 className="text-xl font-bold text-gray-900">MeuAPH</h1>
-              <p className="text-xs text-gray-600">Projeto Integrador</p>
+              <p className="text-xs text-gray-600">Projeto Integrador turma 2025.02.19</p>
             </div>
           </div>
 
@@ -51,9 +51,11 @@ const Header = () => {
           </nav>
 
           {/* BOTÃO SAMU DESKTOP (RESTAURADO) */}
-          <a
-            href="tel:192"
-            className="hidden md:flex items-center space-x-2 bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition animate-pulse"
+      
+          <div className="hidden md:flex items-center space-x-4">
+              <Link
+              to="/register"
+            className="hidden md:flex items-center space-x-1 bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition animate-pulse"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -69,8 +71,30 @@ const Header = () => {
             >
               <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
             </svg>
-            <span className="font-bold">192 - SAMU</span>
+            <span className="font-bold">Cadastro Pessoal</span>
+          </Link>
+
+           <a
+            href="tel:192"
+            className="hidden md:flex items-center space-x-1 bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition animate-pulse"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-phone w-5 h-5"
+            >
+              <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+            </svg>
+            <span className="font-bold">Buscar paciente</span>
           </a>
+          </div>
 
           {/* ÍCONE MOBILE */}
           <button
