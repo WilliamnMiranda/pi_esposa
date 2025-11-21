@@ -16,15 +16,6 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Index />
-      <Levels />
-      <Protocols />
-      <Equipe />
-      <Servicos/>
-      <Search />
-      <First />
-      <Contacts />
     </>
   )
 }
