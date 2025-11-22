@@ -38,6 +38,12 @@ const Header = () => {
             <div>
               <h1 className="text-xl font-bold text-gray-900">MeuAPH</h1>
               <p className="text-xs text-gray-600">
+               Especialização Técnica de enfermagem 
+              </p>
+              <p className="text-xs text-gray-600">
+                em Urgência e Emergência
+              </p>
+              <p className="text-xs text-gray-600">
                 Projeto Integrador turma 2025.02.19
               </p>
             </div>
