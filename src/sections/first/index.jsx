@@ -60,7 +60,7 @@ const First = () => {
 
           <li className="flex items-start space-x-3">
             <div className="bg-blue-900 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</div>
-            <span className="text-gray-700">Se não conseguir, aplique a Manobra de Heimlich</span>
+            <span className="text-gray-700">Se não conseguir, aplique a Manobra de Desengasgo</span>
           </li>
 
           <li className="flex items-start space-x-3">

@@ -113,31 +113,14 @@ const Protocols = () => {
                 <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
                 <path d="m9 11 3 3L22 4"/>
               </svg>
-              <span>Avaliação ABCDE do trauma</span>
+              <span>Avaliação XABCDE do trauma</span>
             </li>
-
             <li className="flex items-start gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-green-600 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
                 <path d="m9 11 3 3L22 4"/>
               </svg>
-              <span>Imobilização cervical e corporal</span>
-            </li>
-
-            <li className="flex items-start gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-green-600 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
-                <path d="m9 11 3 3L22 4"/>
-              </svg>
-              <span>Controle de sangramento externo</span>
-            </li>
-
-            <li className="flex items-start gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-green-600 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
-                <path d="m9 11 3 3L22 4"/>
-              </svg>
-              <span>Transporte adequado</span>
+              <span>Segurança da cena</span>
             </li>
           </ul>
         </div>
@@ -148,16 +131,15 @@ const Protocols = () => {
             <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
             </svg>
-            <h3 className="text-xl font-bold text-gray-800">Regulação Médica</h3>
+            <h3 className="text-xl font-bold text-gray-800">Central de Regulação de urgência</h3>
           </div>
-
           <ul className="space-y-2 text-gray-700">
             <li className="flex items-start gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                 <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
                 <path d="m9 11 3 3L22 4"/>
               </svg>
-              <span>classNameificação de risco</span>
+              <span>Classificação de risco</span>
             </li>
 
             <li className="flex items-start gap-2">

@@ -47,9 +47,10 @@ const Levels = () => {
                   <div>
                     <h3 className="text-2xl font-bold mb-2">Acionamento</h3>
                     <p className="text-red-50">
-                      Chamado através do 192 (SAMU) ou 193 (Bombeiros). Central
-                      de regulação avalia a gravidade e despacha a equipe
-                      adequada.
+                      Chamado através do 192 (SAMU) ou 193 (Bombeiros). 
+                      Informe como está a vitima de maneira clara e objetiva,onde é a ocorrencia
+                      com o máximo de informações possíveis
+              
                     </p>
                   </div>
                 </div>
@@ -71,7 +72,7 @@ const Levels = () => {
                   <div>
                     <h3 className="text-2xl font-bold mb-2">Deslocamento</h3>
                     <p className="text-orange-50">
-                      Viatura se desloca até o local com rapidez e segurança.
+                      Aguarde no local até a equipe chegar.
                     </p>
                   </div>
                 </div>

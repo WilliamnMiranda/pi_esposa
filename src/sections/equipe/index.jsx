@@ -28,27 +28,27 @@ const Equipe = () => {
           <ul class="space-y-3 text-gray-700">
             <li class="flex items-center gap-2">
               <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span><strong>Médicos</strong> - Suporte avançado</span>
+              <span><strong>Médicos</strong></span>
             </li>
 
             <li class="flex items-center gap-2">
               <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span><strong>Enfermeiros</strong> - Cuidados intensivos</span>
+              <span><strong>Enfermeiros</strong></span>
             </li>
 
             <li class="flex items-center gap-2">
               <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span><strong>Técnicos de Enfermagem</strong> - Suporte básico</span>
+              <span><strong>Técnicos de Enfermagem</strong> </span>
             </li>
 
             <li class="flex items-center gap-2">
               <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span><strong>Condutores</strong> - Transporte seguro</span>
+              <span><strong>Condutores</strong></span>
             </li>
 
             <li class="flex items-center gap-2">
               <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-              <span><strong>Reguladores</strong> - Coordenação</span>
+              <span><strong>Reguladores</strong></span>
             </li>
           </ul>
         </div>
@@ -115,7 +115,6 @@ const Equipe = () => {
        <div class="grid grid-cols-3 gap-4 text-center">
   <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
     <div class="text-xl sm:text-2xl md:text-3xl font-bold mb-1">10min</div>
-    <div class="text-xs sm:text-sm text-red-100">Tempo Ouro</div>
   </div>
 
   <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">

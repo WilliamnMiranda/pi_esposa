@@ -36,6 +36,11 @@ const Index = () => {
 
       <div className="flex flex-wrap gap-4 justify-center">
         <div className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
+          <div className="text-3xl font-bold">190</div>
+          <div className="text-sm">Policia Militar</div>
+        </div>
+        
+        <div className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
           <div className="text-3xl font-bold">192</div>
           <div className="text-sm">SAMU</div>
         </div>
